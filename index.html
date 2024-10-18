@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Hora del Recreo</title>
+    <link rel="stylesheet" href="BEM.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="imagenes/Screenshot_2.png" alt="Logo La Hora del Recreo" class="header__logo-image">
+            <span class="header__logo-text">La Hora del Recreo</span>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link nav__link--inicio">Inicio</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__link--sobre-nosotros">Sobre Nosotros</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__link--productos">Productos</a></li>
+                <li class="nav__item"><a href="#" class="nav__link nav__link--contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="session session--welcome">
+                <div class="session__content">
+                    <h1 class="session__title">¡Bienvenido a La Hora del Recreo!</h1>
+                    <p class="session__description">En nuestra juguetería, encontrarás una amplia variedad de juguetes de alta calidad, diseñados para estimular la creatividad y el desarrollo de los más pequeños. ¡Explora nuestros productos y descubre los mejores precios!</p>
+                </div>
+            </section>
+
+            <div class="categories-products">
+                <div class="categories">
+                    <h2 class="categories__title">Categorías</h2>
+                    <ul class="categories__list">
+                        <li class="categories__item"><a href="#" class="categories__link">Muñecas</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Juegos de Mesa</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Juguetes de Construcción</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Pelotas</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Sets de Cocina</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Puzzles</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Figuras de Acción</a></li>
+                        <li class="categories__item"><a href="#" class="categories__link">Juguetes Educativos</a></li>
+                    </ul>
+                </div>
+
+                <section class="products">
+                    <h2 class="products__title">Nuestros Productos</h2>
+                    <div class="products__grid">
+                        <div class="product">
+                            <img src="imagenes/2.jpg" alt="Muñeca" class="product__image">
+                            <h3 class="product__name">Muñeca</h3>
+                            <p class="product__price">Precio: $25.00</p>
+                            <button class="product__button product__button--add" data-product="Muñeca" data-price="25.00">Agregar</button>
+                        </div>
+                        <div class="product">
+                            <img src="imagenes/1.jpeg" alt="Teléfono" class="product__image">
+                            <h3 class="product__name">Teléfono</h3>
+                            <p class="product__price">Precio: $15.00</p>
+                            <button class="product__button product__button--add" data-product="Teléfono" data-price="15.00">Agregar</button>
+                        </div>
+                        <div class="product">
+                            <img src="imagenes/3.jpg" alt="Set de Cocina" class="product__image">
+                            <h3 class="product__name">Set de Cocina</h3>
+                            <p class="product__price">Precio: $30.00</p>
+                            <button class="product__button product__button--add" data-product="Set de Cocina" data-price="30.00">Agregar</button>
+                        </div>
+                        <div class="product">
+                            <img src="imagenes/descarga.jpeg" alt="Pelota" class="product__image">
+                            <h3 class="product__name">Pelota</h3>
+                            <p class="product__price">Precio: $10.00</p>
+                            <button class="product__button product__button--add" data-product="Pelota" data-price="10.00">Agregar</button>
+                        </div>
+                        <div class="product">
+                            <img src="imagenes/D_962660-MLA70779238333_072023-C.jpg" alt="Juguete de Construcción" class="product__image">
+                            <h3 class="product__name">Juguete de Construcción</h3>
+                            <p class="product__price">Precio: $40.00</p>
+                            <button class="product__button product__button--add" data-product="Juguete de Construcción" data-price="40.00">Agregar</button>
+                        </div>
+                        <div class="product">
+                            <img src="imagenes/6.jpg" alt="Juego de Mesa" class="product__image">
+                            <h3 class="product__name">Juego de Mesa</h3>
+                            <p class="product__price">Precio: $20.00</p>
+                            <button class="product__button product__button--add" data-product="Juego de Mesa" data-price="20.00">Agregar</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="contact-cart-container">
+                <div class="cart">
+                    <h2 class="cart__title">
+                        <i class="fas fa-shopping-cart"></i> Carrito
+                    </h2>
+                    <p class="cart__items">No hay productos en el carrito.</p>
+                    <p class="cart__total">Total: $0.00</p>
+                    <button class="cart__clear-button cart__clear-button--primary">Limpiar Carrito</button>
+                </div>
+
+                <div class="shipping-info">
+                    <h3 class="shipping-info__title">
+                        <i class="fas fa-truck"></i> Envíos a Domicilio
+                    </h3>
+                    <p class="shipping-info__description">Realizamos envíos a domicilio. Contáctanos para más información sobre tarifas y tiempos de entrega.</p>
+                </div>
+
+                <div class="contact">
+                    <h2 class="contact__title">Contacto</h2>
+                    <form class="contact__form">
+                        <input type="text" placeholder="Nombre" required class="contact__input">
+                        <input type="email" placeholder="Correo" required class="contact__input">
+                        <input type="tel" placeholder="Teléfono" required class="contact__input">
+                        <textarea placeholder="Mensaje" required class="contact__textarea"></textarea>
+                        <button type="submit" class="contact__button contact__button--submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 La Hora del Recreo. Todos los derechos reservados.</p>
+        <div class="footer__socials">
+            <a href="#" class="footer__social-link footer__social-link--facebook">Facebook</a>
+            <a href="#" class="footer__social-link footer__social-link--twitter">Twitter</a>
+            <a href="#" class="footer__social-link footer__social-link--instagram">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
